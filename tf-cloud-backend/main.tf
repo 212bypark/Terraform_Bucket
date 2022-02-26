@@ -7,6 +7,12 @@ terraform {
       name = "tf-cloud-backend"
     }
   }
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "4.2.0"
+    }
+  }
 }
 
 provider "aws" {
